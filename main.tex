@@ -1,0 +1,248 @@
+\documentclass[fontsize=12pt,a5paper,DIV=calc]{scrbook}
+
+\usepackage[scaled=.92]{helvet}
+\usepackage{fix-cm} %helps with lettrine calculations
+\usepackage{csquotes}
+\usepackage{microtype}
+\usepackage{lettrine}
+\usepackage[skip=5pt,indent]{parskip}
+
+\usepackage{fancyhdr}
+\fancyfoot[C]{[\hspace{10pt} \thepage \hspace{10pt} ]}
+\fancyhead[RL]{}
+\fancyhead[C]{\scshape The Prophet}
+
+\title{The Prophet}
+\author{Kahlil Gibran}
+
+\setkomafont{chapter}{}
+\addtokomafont{chapter}{\footnotesize} 
+\addtokomafont{chapter}{\rmfamily} 
+\addtokomafont{chapter}{\mdseries} 
+\addtokomafont{chapter}{\itshape}
+\renewcommand*{\raggedsection}{\centering}
+
+\BeforeTOCHead[toc]{%
+  \KOMAoptions{parskip=false}% no parskip in ToC
+ 
+}
+\DeclareTOCStyleEntry[beforeskip=0cm]{chapter}{chapter}
+\RedeclareSectionCommand[tocbeforeskip=1pt]{chapter}
+
+\addtokomafont{chapterentry}{\mdseries}
+\addtokomafont{chapterentry}{\rmfamily}
+\addtokomafont{chapterentry}{\scshape}
+\addtokomafont{chapterentry}{\footnotesize}
+
+
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+\makeatletter
+\begin{titlepage}
+	\setlength{\parindent}{0pt}
+	\vspace*{.1\textheight}
+	{\LARGE \rmfamily \scshape \@author\par}
+	\bigbreak
+	{\centering \Huge \rmfamily \itshape \@title\par}
+\end{titlepage}
+\makeatother
+
+{
+\thispagestyle{empty}
+\,
+\vfill
+\scriptsize
+\sffamily
+\noindent
+\textbf{The Project Gutenberg EBook of The Prophet, by Kahlil Gibran}\par
+
+\noindent
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever.  You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online at
+www.gutenberg.org.  If you are not located in the United States, you'll
+have to check the laws of the country where you are located before using
+this ebook.
+
+\noindent
+Original Project Gutenburg source produced by David Widger from page images generously provided by the Internet Archive.
+}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+          % The Coming of the Ship.......7
+          % On Love.....................15
+          % On Marriage.................19
+          % On Children.................21
+          % On Giving...................23
+          % On Eating and Drinking......27
+          % On Work.....................31
+          % On Joy and Sorrow...........33
+          % On Houses...................37
+          % On Clothes..................41
+          % On Buying and Selling.......43
+          % On Crime and Punishment.....45
+          % On Laws.....................51
+          % On Freedom..................55
+          % On Reason and Passion.......57
+          % On Pain.....................60
+          % On Self-Knowledge...........62
+          % On Teaching.................64
+          % On Friendship...............66
+          % On Talking..................68
+          % On Time.....................70
+          % On Good and Evil............72
+          % On Prayer...................76
+          % On Pleasure.................79
+          % On Beauty...................83
+          % On Religion.................87
+          % On Death....................90
+          % The Farewell................92
+\pagestyle{fancy}
+\setcounter{page}{1}
+\phantomsection
+\addcontentsline{toc}{chapter}{the coming of the ship}
+\input{chapters/introduction.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on love}
+\input{chapters/love.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on marriage}
+\input{chapters/marriage.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on children}
+\input{chapters/children.tex}
+\clearpage 
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on giving}
+\input{chapters/giving.tex}
+\clearpage 
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on eating and drinking}
+\input{chapters/eating.tex}
+\clearpage 
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on work}
+\input{chapters/work.tex}
+\clearpage 
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on joy and sorrow}
+\input{chapters/joy.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on houses}
+\input{chapters/houses.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on clothes}
+\input{chapters/clothes.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on buying and selling}
+\input{chapters/buying.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on crime and punishment}
+\input{chapters/crime.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on laws}
+\input{chapters/laws.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on freedom}
+\input{chapters/freedom.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on reason and passion}
+\input{chapters/reason.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on pain}
+\input{chapters/pain.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on self-knowledge}
+\input{chapters/self-knowledge.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on teaching}
+\input{chapters/teaching.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on friendship}
+\input{chapters/friendship.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on talking}
+\input{chapters/talking.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on time}
+\input{chapters/time.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on good and evil}
+\input{chapters/good-and-evil.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on prayer}
+\input{chapters/prayer.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on pleasure}
+\input{chapters/pleasure.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on beauty}
+\input{chapters/beauty.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on religion}
+\input{chapters/religion.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{on death}
+\input{chapters/death.tex}
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{the farewell}
+\input{chapters/farewell.tex}
+\clearpage
+
+\end{document}
